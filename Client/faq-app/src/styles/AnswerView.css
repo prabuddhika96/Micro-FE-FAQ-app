@@ -1,0 +1,52 @@
+:root {
+  --gray: #afafaf;
+}
+
+.container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px auto;
+}
+.question-details {
+  background-color: var(--gray);
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+.question-details > h2 {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+.question-details > p {
+  color: rgb(39, 39, 39);
+  font-size: 18px;
+}
+
+.answer-card {
+  margin: 20px auto;
+}
+.answer-card-answer {
+  font-size: 16px;
+  text-align: justify;
+}
+.answer-card-bottom {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+}
+.answer-card-bottom > p {
+  font-size: 14px;
+  font-style: italic;
+}
+.like-btn {
+  font-size: 18px;
+  cursor: pointer;
+}
+.like-count {
+  font-size: 10px;
+}

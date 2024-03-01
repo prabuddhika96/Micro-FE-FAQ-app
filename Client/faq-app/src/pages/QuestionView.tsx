@@ -2,6 +2,7 @@ import myBackgroundImage from "../Assets/Images/FAQ_background.png";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/QuestionView.css";
+import { RouteNames } from "../constants/RouteNames";
 
 function QuestionView() {
   const [fillActive, setFillActive] = useState("all");
@@ -17,7 +18,7 @@ function QuestionView() {
   };
 
   const answerViewHandle = () => {
-    Navigate("/answer-view");
+    Navigate(RouteNames.ViewAnswer);
   };
 
   useEffect(() => {
