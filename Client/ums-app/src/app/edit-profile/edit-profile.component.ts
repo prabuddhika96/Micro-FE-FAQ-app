@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   FormControl,
@@ -16,6 +16,7 @@ import { PopUpComponent } from '../pop-up/pop-up.component';
   imports: [CommonModule, ReactiveFormsModule],
   templateUrl: 'edit-profile.component.html',
   styleUrls: ['./edit-profile.component.css'],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class EditProfileComponent {
   constructor(private dialog: MatDialog) {}
