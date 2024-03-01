@@ -8,37 +8,34 @@ import {
 } from '@angular/forms';
 
 @Component({
-  selector: 'app-register',
+  selector: 'app-pop-up',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
-  templateUrl: './register.component.html',
-  styleUrl: './register.component.css',
+  imports: [ReactiveFormsModule, CommonModule],
+  templateUrl: './pop-up.component.html',
+  styleUrl: './pop-up.component.css',
 })
-export class RegisterComponent {
-  constructor() {}
-
-  editProfileForm = new FormGroup({
-    firstName: new FormControl('', Validators.required),
-    lastName: new FormControl('', Validators.required),
-    email: new FormControl('', [Validators.required, Validators.email]),
-    password: new FormControl('', Validators.required),
+export class PopUpComponent {
+  changePwForm = new FormGroup({
+    currentPw: new FormControl('', Validators.required),
+    newPw: new FormControl('', Validators.required),
+    confirmPw: new FormControl('', [Validators.required]),
   });
 
-  errorMessages: any = {}; // Initialize errorMessages as an empty object
+  errorMessages: any = {};
 
   handleSubmit(event: Event) {
     event.preventDefault();
     // Clear previous error messages
     this.errorMessages = {};
 
-    if (this.editProfileForm.valid) {
-      console.log(this.editProfileForm.value);
+    if (this.changePwForm.valid) {
+      console.log(this.changePwForm.value);
     } else {
-      this.editProfileForm.markAllAsTouched();
+      this.changePwForm.markAllAsTouched();
 
       // Iterate through each form control to check for validation errors
-      Object.keys(this.editProfileForm.controls).forEach((key) => {
-        const controlErrors = this.editProfileForm.get(key)?.errors;
+      Object.keys(this.changePwForm.controls).forEach((key) => {
+        const controlErrors = this.changePwForm.get(key)?.errors;
         if (controlErrors != null) {
           Object.keys(controlErrors).forEach((keyError) => {
             switch (keyError) {

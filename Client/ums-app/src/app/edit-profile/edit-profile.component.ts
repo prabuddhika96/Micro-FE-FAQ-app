@@ -6,22 +6,33 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+import { User } from '../user';
+import { MatDialog } from '@angular/material/dialog';
+import { PopUpComponent } from '../pop-up/pop-up.component';
 
 @Component({
-  selector: 'app-register',
+  selector: 'app-edit-profile',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
-  templateUrl: './register.component.html',
-  styleUrl: './register.component.css',
+  templateUrl: 'edit-profile.component.html',
+  styleUrls: ['./edit-profile.component.css'],
 })
-export class RegisterComponent {
-  constructor() {}
+export class EditProfileComponent {
+  constructor(private dialog: MatDialog) {}
+  userDetails: User = {
+    id: 1,
+    firstName: 'John',
+    lastName: 'Doe',
+    email: 'john@gmail.com',
+  };
 
   editProfileForm = new FormGroup({
-    firstName: new FormControl('', Validators.required),
-    lastName: new FormControl('', Validators.required),
-    email: new FormControl('', [Validators.required, Validators.email]),
-    password: new FormControl('', Validators.required),
+    firstName: new FormControl(this.userDetails.firstName, Validators.required),
+    lastName: new FormControl(this.userDetails.lastName, Validators.required),
+    email: new FormControl(this.userDetails.email, [
+      Validators.required,
+      Validators.email,
+    ]),
   });
 
   errorMessages: any = {}; // Initialize errorMessages as an empty object
@@ -55,5 +66,20 @@ export class RegisterComponent {
         }
       });
     }
+  }
+
+  Openpopup(code: any, title: any, component: any) {
+    var _popup = this.dialog.open(PopUpComponent, {
+      width: '40%',
+      enterAnimationDuration: '100ms',
+      exitAnimationDuration: '100ms',
+      data: { title: title, code: code },
+    });
+    _popup.afterClosed().subscribe((item) => {});
+  }
+
+  changePassword() {
+    // alert();
+    this.Openpopup(0, 'Change Password', PopUpComponent);
   }
 }
