@@ -10,7 +10,7 @@ function AskQBanner() {
   };
 
   const handleQ = () => {
-    Navigate("/question-view");
+    Navigate(RouteNames.ViewQuestion);
   };
   return (
     <div className="relative">

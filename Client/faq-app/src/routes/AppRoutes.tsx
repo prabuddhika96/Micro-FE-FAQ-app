@@ -5,6 +5,7 @@ import Home from "../pages/Home";
 import "../styles/styles.css";
 import "../index.css";
 import AskQuestionForm from "../components/AskQuestionForm";
+import QuestionView from "../pages/QuestionView";
 
 function AppRoutes() {
   return (
@@ -17,6 +18,7 @@ function AppRoutes() {
               path={RouteNames.AskQuestion}
               element={<AskQuestionForm />}
             />
+            <Route path={RouteNames.ViewQuestion} element={<QuestionView />} />
           </Route>
         </Routes>
       </BrowserRouter>
