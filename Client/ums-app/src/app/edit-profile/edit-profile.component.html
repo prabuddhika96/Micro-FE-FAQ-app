@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="edit-profile">
+      <div class="edit-profile-form">
+        <form
+          [formGroup]="editProfileForm"
+          (submit)="handleSubmit($event)"
+          class="edit-form"
+        >
+          <legend class="form-legend">Edit Profile Details</legend>
+          <label class="form-label" for="firstName">First Name</label>
+          <input
+            class="form-input"
+            type="text"
+            id="firstName"
+            formControlName="firstName"
+          />
+          <p class="form-error-msg" *ngIf="errorMessages['firstName']">
+            {{ errorMessages["firstName"] }}
+          </p>
+          <!-- Display error message -->
+
+          <label class="form-label" for="lastName">Last Name</label>
+          <input
+            class="form-input"
+            type="text"
+            id="lastName"
+            formControlName="lastName"
+          />
+          <p class="form-error-msg" *ngIf="errorMessages['lastName']">
+            {{ errorMessages["lastName"] }}
+          </p>
+          <!-- Display error message -->
+
+          <label class="form-label" for="email">Email</label>
+          <input
+            class="form-input"
+            type="text"
+            id="email"
+            formControlName="email"
+          />
+          <p class="form-error-msg" *ngIf="errorMessages['email']">
+            {{ errorMessages["email"] }}
+          </p>
+          <!-- Display error message -->
+
+          <button (click)="changePassword()">Change Password</button>
+
+          <button class="form-btn" type="submit">Save Changes</button>
+        </form>
+      </div>
+      <div class="edit-profile-img">
+        <img src="assets/images/logo_main.png" alt="logo" width="600px" />
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  .change-pw {
+    @apply p-5;
+  }
+  .change-pw-title {
+    @apply !text-xl !font-bold text-center;
+  }
+
+  /* form css */
+  .edit-profile {
+    @apply w-full h-screen flex justify-center items-center;
+  }
+  .edit-form {
+    @apply w-full;
+  }
+  .form-label {
+    @apply block;
+  }
+  .form-input {
+    @apply block w-full h-[40px] !px-2 !border-2 !border-solid !border-black;
+  }
+  .form-btn {
+    @apply block !bg-blue-500 !text-white !p-2 w-full !mt-2 hover:!bg-blue-600;
+  }
+  .form-a {
+    @apply !text-blue-600;
+  }
+  .form-error-msg {
+    @apply !text-red-600;
+  }
+}

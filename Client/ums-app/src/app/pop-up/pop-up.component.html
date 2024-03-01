@@ -1,0 +1,50 @@
+<section class="change-pw">
+  <h2 class="change-pw-title">Change Password</h2>
+
+  <form
+    [formGroup]="changePwForm"
+    (submit)="handleSubmit($event)"
+    class="edit-form"
+  >
+    <label class="form-label" for="currentPw">Current Password</label>
+    <input
+      class="form-input"
+      type="text"
+      id="currentPw"
+      formControlName="currentPw"
+      placeholder="Enter your current password"
+    />
+    <p class="form-error-msg" *ngIf="errorMessages['currentPw']">
+      {{ errorMessages["currentPw"] }}
+    </p>
+    <!-- Display error message -->
+
+    <label class="form-label" for="newPw">New Password</label>
+    <input
+      class="form-input"
+      type="text"
+      id="newPw"
+      formControlName="newPw"
+      placeholder="Enter your new password"
+    />
+    <p class="form-error-msg" *ngIf="errorMessages['newPw']">
+      {{ errorMessages["newPw"] }}
+    </p>
+    <!-- Display error message -->
+
+    <label class="form-label" for="confirmPw">Confirm New Password</label>
+    <input
+      class="form-input"
+      type="text"
+      id="confirmPw"
+      formControlName="confirmPw"
+      placeholder="Enter your new password again"
+    />
+    <p class="form-error-msg" *ngIf="errorMessages['confirmPw']">
+      {{ errorMessages["confirmPw"] }}
+    </p>
+    <!-- Display error message -->
+
+    <button class="form-btn" type="submit">Change Password</button>
+  </form>
+</section>
