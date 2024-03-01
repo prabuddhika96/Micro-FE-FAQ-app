@@ -1,11 +1,12 @@
 import React from "react";
 import Qphoto from "../Assets/Images/Qbanner.jpg";
 import { useNavigate } from "react-router-dom";
+import { RouteNames } from "../constants/RouteNames";
 
 function AskQBanner() {
   const Navigate = useNavigate();
   const handleAskQ = () => {
-    Navigate("/askquestion");
+    Navigate(RouteNames.AskQuestion);
   };
 
   const handleQ = () => {
