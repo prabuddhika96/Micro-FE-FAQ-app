@@ -1,24 +1,17 @@
 import myBackgroundImage from "../Assets/Images/FAQ_background.png";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../styles/QuestionView.css";
 import { RouteNames } from "../constants/RouteNames";
+import { getRoute } from "../utility/function";
 
 function QuestionView() {
-  const [fillActive, setFillActive] = useState("all");
-  const Navigate = useNavigate();
+  const navigate = useNavigate();
   const [allQues, setAllQues] = useState<boolean>(true);
   const [questions, setQuestions] = useState<any>([]);
 
-  const handleFillClick = (value: string) => {
-    if (value === fillActive) {
-      return;
-    }
-    setFillActive(value);
-  };
-
   const answerViewHandle = () => {
-    Navigate(RouteNames.ViewAnswer);
+    navigate(getRoute(RouteNames.ViewAnswer.replace(":id", "2")));
   };
 
   useEffect(() => {

@@ -24,7 +24,7 @@ function AskQBanner() {
             className="bg-blue-500 text-white px-4 py-2 mt-4 mr-2 hover:bg-red-900 rounded-md border-4 border-white"
             onClick={handleAskQ}
           >
-            Click here
+            Ask Question
           </button>
           <button
             className="bg-blue-500 text-white px-4 py-2 mt-4 hover:bg-red-900 rounded-md border-4 border-white"

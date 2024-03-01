@@ -3,5 +3,7 @@ export enum RouteNames {
   Home = "",
   AskQuestion = "ask-question",
   ViewQuestion = "view-question",
-  ViewAnswer = "view-answer",
+  ViewAnswer = "view-answer/:id",
+
+  answerViewFromOrigin = "**",
 }
