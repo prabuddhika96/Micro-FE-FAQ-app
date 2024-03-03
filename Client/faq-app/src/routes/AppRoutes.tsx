@@ -8,7 +8,7 @@ import AskQuestionForm from "../components/AskQuestionForm";
 import QuestionView from "../pages/QuestionView";
 import Footer from "../components/Footer";
 import AnswerView from "../pages/AnswerView";
-import Header from "../components/Common/Header";
+import Header from "../components/Header";
 
 function AppRoutes() {
   return (
