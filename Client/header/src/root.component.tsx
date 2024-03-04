@@ -11,13 +11,6 @@ export default function Root(props) {
         <Routes>
           <Route path={RouteNames.mainApp}>
             <Route path={RouteNames.Home} element={<></>} />
-            {/* <Route
-              path={RouteNames.AskQuestion}
-              element={<AskQuestionForm />}
-            />
-            <Route path={RouteNames.ViewQuestion} element={<QuestionView />} />
-
-            <Route path={RouteNames.ViewAnswer} element={<AnswerView />} /> */}
           </Route>
         </Routes>
       </BrowserRouter>
