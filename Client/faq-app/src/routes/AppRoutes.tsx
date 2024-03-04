@@ -27,7 +27,7 @@ function AppRoutes() {
             <Route path={RouteNames.ViewAnswer} element={<AnswerView />} />
           </Route>
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );
