@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { getData } from '@eyepax/utility';
 import {
   FormControl,
   FormGroup,
@@ -18,7 +19,7 @@ import { LoginRequest } from '../login-request';
   templateUrl: 'login.component.html',
   styleUrl: './login.component.css',
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
   constructor() {}
 
   editProfileForm = new FormGroup({
@@ -73,4 +74,10 @@ export class LoginComponent {
   //   // alert();
   //   this.Openpopup(0, 'Change Password', PopUpComponent);
   // }
+
+  ngOnInit() {
+    getData().then((data: any) => {
+      console.log('Angular ->', data);
+    });
+  }
 }
