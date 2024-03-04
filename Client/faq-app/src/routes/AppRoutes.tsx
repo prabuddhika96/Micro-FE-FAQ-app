@@ -14,7 +14,7 @@ function AppRoutes() {
   return (
     <div>
       <BrowserRouter>
-        <Header />
+        {/* <Header /> */}
         <Routes>
           <Route path={RouteNames.mainApp}>
             <Route path={RouteNames.Home} element={<Home />} />

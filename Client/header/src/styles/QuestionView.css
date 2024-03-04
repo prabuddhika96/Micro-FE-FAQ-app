@@ -1,0 +1,44 @@
+:root {
+  --selectedBlue: #3868df;
+  --btn-bg-color: rgb(100 116 139 /1);
+}
+
+.tabTitle {
+  color: var(--selectedBlue);
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+.selected-tab {
+  border-bottom: 2px solid var(--selectedBlue);
+}
+
+.content-container {
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.question-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 8px auto;
+  width: 83%;
+}
+.q-card-btn {
+  padding: 8px;
+  background-color: var(--btn-bg-color);
+  color: white;
+  border-radius: 5px;
+}
+.q-card-btn:hover {
+  background-color: var(--selectedBlue);
+}

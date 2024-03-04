@@ -19,21 +19,17 @@
 
   <!-- <nav>this is nav bar</nav> -->
 
+  <nav>
+    <application name="@eyepax/header"></application>
+  </nav>
+
   <main>
     <route default>
-      <application name="@eyepax/faq-app"></application>
-    </route>
-    <!-- <route default>
-      <application name="@single-spa/welcome"></application>
-    </route> -->
-    <route default>
       <application name="@ums-app/angular-project"></application>
-      <!-- <application name="@single-spa/welcome"></application> -->
     </route>
 
     <route path="/faq-app">
       <application name="@eyepax/faq-app"></application>
-      <!-- <application name="@single-spa/welcome"></application> -->
     </route>
   </main>
 </single-spa-router>
