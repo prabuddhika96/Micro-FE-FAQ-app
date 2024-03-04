@@ -28,6 +28,12 @@ declare module "*.png" {
   export default src;
 }
 
+declare module "@eyepax/utility" {
+  export function getData(): Promise<any>;
+  export function sendRouteNames(): any;
+  export const state$: any;
+}
+
 declare module "*.webp" {
   const src: string;
   export default src;

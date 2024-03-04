@@ -1,20 +1,14 @@
-// Anything exported from this file is importable by other in-browser modules.
-const apiCache = new Map();
+import { BehaviorSubject } from "rxjs";
+import { RouteNames } from "./eyepax-routes";
+// import { BehaviourSubject } from "rxjs";
 
-export function getData(url) {
-  const data = apiCache.get(url);
-  if (data) {
-    console.log("cached api");
-    return Promise.resolve(data);
-  }
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      const result = {
-        data: 10,
-      };
-      apiCache.set(url, result);
-      console.log("actual api");
-      resolve(result);
-    }, 2000);
-  });
+// Anything exported from this file is importable by other in-browser modules.
+export function getData() {
+  return "hello";
 }
+
+export function sendRouteNames() {
+  return RouteNames;
+}
+
+export const state$ = new BehaviorSubject({});

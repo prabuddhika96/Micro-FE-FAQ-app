@@ -1,0 +1,19 @@
+/* styles.css */
+
+.footer-container {
+  background-color: #008b8b; /* Dark Cyan */
+  color: white;
+  padding: 1rem 0;
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}

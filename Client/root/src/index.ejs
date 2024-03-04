@@ -37,7 +37,9 @@
     <script type="systemjs-importmap">
       {
         "imports": {
-          "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
+          "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+          "rxjs": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.4.0/rxjs.umd.min.js",
+          "@eyepax/utility":"http://localhost:8082/eyepax-utility.js"
         }
       }
     </script>
@@ -59,6 +61,8 @@
           "@ums-app/angular-project": "http://localhost:9002/main.js",
 
           "@eyepax/faq-app":"http://localhost:8081/eyepax-faq-app.js",
+          "@eyepax/header":"http://localhost:8083/eyepax-header.js",
+          "@eyepax/footer":"http://localhost:8084/eyepax-footer.js",
           "react": "https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.production.min.js",
           "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js"
         }
