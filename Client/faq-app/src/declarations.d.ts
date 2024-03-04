@@ -30,6 +30,8 @@ declare module "*.png" {
 
 declare module "@eyepax/utility" {
   export function getData(): Promise<any>;
+  export function sendRouteNames(): any;
+  export const state$: any;
 }
 
 declare module "*.webp" {

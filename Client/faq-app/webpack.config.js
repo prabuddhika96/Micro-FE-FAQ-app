@@ -10,7 +10,7 @@ module.exports = (webpackConfigEnv, argv) => {
   });
 
   return merge(defaultConfig, {
-    externals: ["@eyepax/utility"],
+    externals: ["rxjs", "@eyepax/utility"],
     // modify the webpack config however you'd like to by adding to this object
   });
 };

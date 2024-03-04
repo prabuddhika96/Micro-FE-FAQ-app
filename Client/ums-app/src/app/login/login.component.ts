@@ -1,13 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { getData } from '@eyepax/utility';
+import { getData, sendRouteNames, state$ } from '@eyepax/utility';
 import {
   FormControl,
   FormGroup,
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { LoginRequest } from '../login-request';
+import { Subscription } from 'rxjs';
+// import { LoginRequest } from '../login-request';
 // import { MatDialog } from '@angular/material/dialog';
 // import { PopUpComponent } from '../pop-up/pop-up.component';
 
@@ -19,7 +20,7 @@ import { LoginRequest } from '../login-request';
   templateUrl: 'login.component.html',
   styleUrl: './login.component.css',
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent implements OnInit, OnDestroy {
   constructor() {}
 
   editProfileForm = new FormGroup({
@@ -57,6 +58,16 @@ export class LoginComponent implements OnInit {
           });
         }
       });
+
+      if (this.errorMessages.length > 0) {
+        return;
+      } else {
+        this.subscription = state$.subscribe((data: any) => {
+          console.log('Angular rxjs->', data);
+        });
+        state$.next({ data: 'token' });
+        // this.subscription.unsubscribe();
+      }
     }
   }
 
@@ -75,9 +86,15 @@ export class LoginComponent implements OnInit {
   //   this.Openpopup(0, 'Change Password', PopUpComponent);
   // }
 
+  subscription!: Subscription;
   ngOnInit() {
-    getData().then((data: any) => {
-      console.log('Angular ->', data);
-    });
+    // console.log('Angular ->', sendRouteNames());
+    // this.subscription = state$.subscribe((data: any) => {
+    //   console.log('Angular rxjs->', 'token');
+    // });
+  }
+  ngOnDestroy() {
+    // state$.next({ data: 'Angular Data' });
+    // this.subscription.unsubscribe();
   }
 }

@@ -1,4 +1,4 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   FormControl,
@@ -9,6 +9,8 @@ import {
 import { User } from '../user';
 import { MatDialog } from '@angular/material/dialog';
 import { PopUpComponent } from '../pop-up/pop-up.component';
+import { Subscription } from 'rxjs';
+import { getData, sendRouteNames, state$ } from '@eyepax/utility';
 
 @Component({
   selector: 'app-edit-profile',
@@ -18,7 +20,7 @@ import { PopUpComponent } from '../pop-up/pop-up.component';
   styleUrls: ['./edit-profile.component.css'],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class EditProfileComponent {
+export class EditProfileComponent implements OnInit {
   constructor(private dialog: MatDialog) {}
   userDetails: User = {
     id: 1,
@@ -82,5 +84,12 @@ export class EditProfileComponent {
   changePassword() {
     // alert();
     this.Openpopup(0, 'Change Password', PopUpComponent);
+  }
+
+  subscription!: Subscription;
+  ngOnInit() {
+    this.subscription = state$.subscribe((data: any) => {
+      console.log('Angular rxjs->', data);
+    });
   }
 }
