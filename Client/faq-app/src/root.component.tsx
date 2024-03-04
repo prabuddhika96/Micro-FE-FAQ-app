@@ -1,5 +1,6 @@
 import AppRoutes from "./routes/AppRoutes";
-import "./index.css";
+import "./styles/styles.css";
+import "./styles/tailwind.css";
 
 export default function Root(props) {
   return (

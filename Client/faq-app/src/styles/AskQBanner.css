@@ -1,0 +1,42 @@
+/* styles.css */
+
+.banner-container {
+  position: relative;
+  background-image: url("../Assets/Images/Qbanner.jpg");
+}
+/* 
+.banner-img {
+  width: 100%;
+  height: 64px;
+  object-fit: cover;
+} */
+
+.banner-content {
+  padding: 50px auto;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  text-align: center;
+}
+
+.banner-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+}
+
+.banner-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border: 4px solid white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.banner-button:hover {
+  background-color: #dc3545;
+}

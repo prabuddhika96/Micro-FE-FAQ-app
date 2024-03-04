@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  .edit-profile {
+    @apply w-full h-screen flex justify-between items-center !mx-auto bg-black;
+  }
+  .edit-profile-img {
+    @apply !w-1/2 flex justify-center items-center;
+  }
+  .edit-profile-form {
+    @apply !w-1/2 p-2 bg-gradient-to-r from-[#707070] h-screen flex justify-start items-center;
+  }
+  .form-legend {
+    @apply text-center font-semibold !text-2xl !text-white;
+  }
+  .edit-form {
+    @apply w-2/3  !p-5;
+  }
+  .form-label {
+    @apply block text-white;
+  }
+  .form-input {
+    @apply block w-full h-[40px] !px-2;
+  }
+  .form-btn {
+    @apply block !bg-blue-500 !text-white !p-2 w-full !mt-2 hover:!bg-blue-600;
+  }
+  .form-a {
+    @apply !text-blue-600;
+  }
+  .form-error-msg {
+    @apply !text-red-600;
+  }
+}
