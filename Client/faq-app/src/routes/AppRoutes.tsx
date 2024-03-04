@@ -6,9 +6,9 @@ import "../styles/styles.css";
 import "../index.css";
 import AskQuestionForm from "../components/AskQuestionForm";
 import QuestionView from "../pages/QuestionView";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AnswerView from "../pages/AnswerView";
+import Header from "../components/Header";
 
 function AppRoutes() {
   return (
