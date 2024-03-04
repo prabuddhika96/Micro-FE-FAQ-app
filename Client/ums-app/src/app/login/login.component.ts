@@ -37,6 +37,11 @@ export class LoginComponent implements OnInit, OnDestroy {
 
     if (this.editProfileForm.valid) {
       console.log(this.editProfileForm.value);
+      this.subscription = state$.subscribe((data: any) => {
+        console.log('Angular rxjs->', data);
+      });
+      state$.next({ data: 'token' });
+      this.subscription.unsubscribe();
     } else {
       this.editProfileForm.markAllAsTouched();
 
@@ -59,15 +64,17 @@ export class LoginComponent implements OnInit, OnDestroy {
         }
       });
 
-      if (this.errorMessages.length > 0) {
-        return;
-      } else {
-        this.subscription = state$.subscribe((data: any) => {
-          console.log('Angular rxjs->', data);
-        });
-        state$.next({ data: 'token' });
-        // this.subscription.unsubscribe();
-      }
+      // console.log(this.errorMessages.length);
+
+      // if (this.errorMessages.length > 0) {
+      //   return;
+      // } else {
+      //   this.subscription = state$.subscribe((data: any) => {
+      //     console.log('Angular rxjs->', data);
+      //   });
+      //   state$.next({ data: 'token' });
+      //   this.subscription.unsubscribe();
+      // }
     }
   }
 
