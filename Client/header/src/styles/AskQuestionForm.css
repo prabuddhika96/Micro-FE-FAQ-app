@@ -1,0 +1,54 @@
+.askQformContainer{
+    width: 90%;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.askQformContainer label{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+.askQformContainer input{
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 10px 0 20px 0;
+    width: 90%;
+    height: 30px;
+}
+
+.askQformContainer textarea {
+    border: 1px solid grey;
+    margin: 10px 0 20px 0;
+    width: 90%;
+    height: 150px;
+    border-radius: 5px;
+    padding: 8px; 
+    box-sizing: border-box; 
+    resize: vertical; 
+    outline: none;
+  }
+
+  .askQformContainer textarea:focus {
+    border: 2px solid black; 
+  }
+
+
+.buttons button{
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.submit{
+    background-color: forestgreen;
+    border: 1px solid darkgreen;
+}
+
+.cancel{
+    background-color:firebrick;
+    border: 1px solid darkred;
+    margin-left: 20px;
+}

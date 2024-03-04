@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { getData } from '@eyepax/utility';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,12 @@ import { RouterOutlet } from '@angular/router';
   </section>`,
   styleUrl: './app.component.css',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'ums-app';
+
+  ngOnInit() {
+    getData().then((data: any) => {
+      console.log('Angular ->', data);
+    });
+  }
 }
