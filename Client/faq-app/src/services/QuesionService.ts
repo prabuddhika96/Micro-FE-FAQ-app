@@ -44,11 +44,23 @@ const getAnswersByQuestionId = async (questionId: any) => {
   return response;
 };
 
+const addQuestion = async (data: any) => {
+  const response = await axios({
+    method: "post",
+    url: `${baseURL}/Faq/questions`,
+    data: data,
+    headers: authHeader(),
+  });
+  // alert("Favourite created --- "+ response);
+  return response;
+};
+
 const QuesionService = {
   getAllQuestions,
   getQuestionById,
   getQuestionsByUserId,
   getAnswersByQuestionId,
+  addQuestion,
 };
 
 export default QuesionService;
