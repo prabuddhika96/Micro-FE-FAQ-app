@@ -30,8 +30,12 @@ function QuestionView() {
     if (allQues) {
       setQuestions(allQuestions);
     } else {
-      // const myQuestions = allQuestions.filter(q => q.)
-      // setQuestions(myQuestions);
+      if (user) {
+        const myQuestions = allQuestions.filter(
+          (q: any) => q?.userId === user?.UserId
+        );
+        setQuestions(myQuestions);
+      }
     }
   }, [allQues]);
 
