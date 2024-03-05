@@ -14,7 +14,7 @@ function AppRoutes() {
   return (
     <div>
       <BrowserRouter>
-        <Header />
+        {/* <Header /> */}
         <Routes>
           <Route path={RouteNames.mainApp}>
             <Route path={RouteNames.Home} element={<Home />} />
@@ -27,7 +27,7 @@ function AppRoutes() {
             <Route path={RouteNames.ViewAnswer} element={<AnswerView />} />
           </Route>
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );

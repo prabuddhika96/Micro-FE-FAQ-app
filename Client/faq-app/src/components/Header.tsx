@@ -2,6 +2,7 @@ import React from "react";
 import MyProfileComponent from "./UserProfile";
 import logo from "../Assets/Images/logo_main.png";
 import { useNavigate } from "react-router-dom";
+import { RouteNames } from "../constants/RouteNames";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -16,7 +17,14 @@ const Header = () => {
           navigate("/");
         }}
       />
-      <h1 className="text-5xl text-cyan-800  font-bold font-mono">QuePax</h1>
+      <h1
+        className="text-5xl text-cyan-800  font-bold font-mono"
+        onClick={() => {
+          navigate(RouteNames.mainApp);
+        }}
+      >
+        QuePax
+      </h1>
       <MyProfileComponent />
     </header>
   );

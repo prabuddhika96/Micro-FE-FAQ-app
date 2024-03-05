@@ -1,0 +1,42 @@
+export const answers = [
+  {
+    userName: "JohnDoe",
+    answer: "This is the first answer.",
+    likes: 10,
+    dislikes: 2,
+    likeStatus: true,
+    id: 1,
+  },
+  {
+    userName: "JaneSmith",
+    answer: "Here goes the second answer.",
+    likes: 15,
+    dislikes: 5,
+    likeStatus: false,
+    id: 2,
+  },
+  {
+    userName: "AliceJohnson",
+    answer: "Third answer coming through.",
+    likes: 20,
+    dislikes: 3,
+    likeStatus: true,
+    id: 3,
+  },
+  {
+    userName: "BobBrown",
+    answer: "The fourth answer is here.",
+    likes: 12,
+    dislikes: 8,
+    likeStatus: false,
+    id: 4,
+  },
+  {
+    userName: "EmilyDavis",
+    answer: "This is the final answer.",
+    likes: 18,
+    dislikes: 6,
+    likeStatus: "none",
+    id: 5,
+  },
+];

@@ -5,13 +5,14 @@ import { EmptyRouteComponent } from './empty-route/empty-route.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { getData, sendRouteNames } from '@eyepax/utility';
 
 const routes: Routes = [
   // { path: '**', component: EmptyRouteComponent },
   { path: '', component: LoginComponent, title: 'Login' },
   { path: 'register', component: RegisterComponent, title: 'Register' },
   {
-    path: 'edit-profile',
+    path: sendRouteNames().editProfile,
     component: EditProfileComponent,
     title: 'Edit-Profile',
   },

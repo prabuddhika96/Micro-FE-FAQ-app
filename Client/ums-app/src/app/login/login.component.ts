@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { getData, sendRouteNames, state$ } from '@eyepax/utility';
 import {
   FormControl,
   FormGroup,
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { LoginRequest } from '../login-request';
+import { Subscription } from 'rxjs';
+// import { LoginRequest } from '../login-request';
 // import { MatDialog } from '@angular/material/dialog';
 // import { PopUpComponent } from '../pop-up/pop-up.component';
 
@@ -18,7 +20,7 @@ import { LoginRequest } from '../login-request';
   templateUrl: 'login.component.html',
   styleUrl: './login.component.css',
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit, OnDestroy {
   constructor() {}
 
   editProfileForm = new FormGroup({
@@ -35,6 +37,11 @@ export class LoginComponent {
 
     if (this.editProfileForm.valid) {
       console.log(this.editProfileForm.value);
+      this.subscription = state$.subscribe((data: any) => {
+        console.log('Angular rxjs->', data);
+      });
+      state$.next({ data: 'token' });
+      this.subscription.unsubscribe();
     } else {
       this.editProfileForm.markAllAsTouched();
 
@@ -56,6 +63,18 @@ export class LoginComponent {
           });
         }
       });
+
+      // console.log(this.errorMessages.length);
+
+      // if (this.errorMessages.length > 0) {
+      //   return;
+      // } else {
+      //   this.subscription = state$.subscribe((data: any) => {
+      //     console.log('Angular rxjs->', data);
+      //   });
+      //   state$.next({ data: 'token' });
+      //   this.subscription.unsubscribe();
+      // }
     }
   }
 
@@ -73,4 +92,16 @@ export class LoginComponent {
   //   // alert();
   //   this.Openpopup(0, 'Change Password', PopUpComponent);
   // }
+
+  subscription!: Subscription;
+  ngOnInit() {
+    // console.log('Angular ->', sendRouteNames());
+    // this.subscription = state$.subscribe((data: any) => {
+    //   console.log('Angular rxjs->', 'token');
+    // });
+  }
+  ngOnDestroy() {
+    // state$.next({ data: 'Angular Data' });
+    // this.subscription.unsubscribe();
+  }
 }
