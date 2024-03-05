@@ -2,41 +2,41 @@ import React, { useState } from "react";
 import { BiDislike, BiLike, BiSolidDislike, BiSolidLike } from "react-icons/bi";
 
 function AnswerCard({ answer }: any) {
-  const [likeStatus, setLikeStatus] = useState<any>(answer?.likeStatus);
-  const [likeCount, setLikeCount] = useState(answer?.likes);
-  const [dislikeCount, setDislikeCount] = useState(answer?.dislikes);
+  const [likeStatus, setLikeStatus] = useState<any>(answer?.userChoice);
+  const [likeCount, setLikeCount] = useState(answer?.likesCount);
+  const [dislikeCount, setDislikeCount] = useState(answer?.dislikesCount);
 
   const handleLikeStatus = () => {
-    if (likeStatus == true) {
-      setLikeStatus("none");
+    if (likeStatus == "Like") {
+      setLikeStatus("Default");
       setLikeCount(likeCount - 1);
     } else {
-      if (likeStatus == false) {
+      if (likeStatus == "Dislike") {
         setDislikeCount(dislikeCount - 1);
       }
-      setLikeStatus(true);
+      setLikeStatus("Like");
       setLikeCount(likeCount + 1);
     }
   };
 
   const handleDisLikeStatus = () => {
-    if (likeStatus == false) {
-      setLikeStatus("none");
+    if (likeStatus == "Dislike") {
+      setLikeStatus("Default");
       setDislikeCount(dislikeCount - 1);
     } else {
-      if (likeStatus == true) {
+      if (likeStatus == "Like") {
         setLikeCount(likeCount - 1);
       }
-      setLikeStatus(false);
+      setLikeStatus("Dislike");
       setDislikeCount(dislikeCount + 1);
     }
   };
   return (
     <div className="answer-card">
-      <p className="answer-card-answer">{answer?.answer}</p>
+      <p className="answer-card-answer">{answer?.description}</p>
       <div className="answer-card-bottom">
         <div>
-          {likeStatus == true ? (
+          {likeStatus == "Like" ? (
             <BiSolidLike onClick={handleLikeStatus} className="like-btn" />
           ) : (
             <BiLike onClick={handleLikeStatus} className="like-btn" />
@@ -46,7 +46,7 @@ function AnswerCard({ answer }: any) {
 
         <div>
           <div>
-            {likeStatus == false ? (
+            {likeStatus == "Dislike" ? (
               <BiSolidDislike
                 onClick={handleDisLikeStatus}
                 className="like-btn"
