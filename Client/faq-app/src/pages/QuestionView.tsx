@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "../styles/QuestionView.css";
 import { RouteNames } from "../constants/RouteNames";
 import { getRoute } from "../utility/function";
+import QuesionService from "../services/QuesionService";
 
 function QuestionView() {
   const navigate = useNavigate();
@@ -21,6 +22,17 @@ function QuestionView() {
       setQuestions(myQuestionData);
     }
   }, [allQues]);
+
+  useEffect(() => {
+    QuesionService.getAllQuestions().then((res: any) => {
+      if (res) {
+        console.log(res);
+        if (res.status === 200 || res.status === 201) {
+          setQuestions(res?.data);
+        }
+      }
+    });
+  }, []);
 
   return (
     <div
@@ -57,7 +69,7 @@ function QuestionView() {
             {questions?.map((question: any) => (
               <div className="content-container" key={question.id}>
                 <div className="question-card">
-                  <p className="">{question.question}</p>
+                  <p className="">{question?.title}</p>
 
                   <button className="q-card-btn" onClick={answerViewHandle}>
                     View Answer
