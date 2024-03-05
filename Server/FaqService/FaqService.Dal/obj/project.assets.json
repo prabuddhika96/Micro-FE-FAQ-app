@@ -2837,19 +2837,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\": {}
+    "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj",
+      "projectUniqueName": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj",
       "projectName": "FaqService.Dal",
-      "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj",
-      "packagesPath": "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\",
-      "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Dal\\obj\\",
+      "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj",
+      "packagesPath": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\",
+      "outputPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Dal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HasangaWeerasinghe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PrabuddhikaMayurapak\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2863,8 +2863,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj": {
-              "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj"
+            "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj": {
+              "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj"
             }
           }
         }
