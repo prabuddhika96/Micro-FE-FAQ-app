@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FaqService.Dal\FaqService.Dal.csproj" />
+    <ProjectReference Include="..\FaqService.Domain\FaqService.Domain.csproj" />
   </ItemGroup>
 
 </Project>
