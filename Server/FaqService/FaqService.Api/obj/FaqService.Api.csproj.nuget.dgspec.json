@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Api\\FaqService.Api.csproj": {}
+    "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Api\\FaqService.Api.csproj": {}
   },
   "projects": {
-    "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Api\\FaqService.Api.csproj": {
+    "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Api\\FaqService.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Api\\FaqService.Api.csproj",
+        "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Api\\FaqService.Api.csproj",
         "projectName": "FaqService.Api",
-        "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Api\\FaqService.Api.csproj",
-        "packagesPath": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\",
-        "outputPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Api\\obj\\",
+        "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Api\\FaqService.Api.csproj",
+        "packagesPath": "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\",
+        "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PrabuddhikaMayurapak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HasangaWeerasinghe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj": {
-                "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj"
+              "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj": {
+                "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj"
               },
-              "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Service\\FaqService.Service.csproj": {
-                "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Service\\FaqService.Service.csproj"
+              "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Service\\FaqService.Service.csproj": {
+                "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Service\\FaqService.Service.csproj"
               }
             }
           }
@@ -115,17 +115,17 @@
         }
       }
     },
-    "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj": {
+    "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj",
+        "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj",
         "projectName": "FaqService.Dal",
-        "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj",
-        "packagesPath": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\",
-        "outputPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Dal\\obj\\",
+        "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj",
+        "packagesPath": "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\",
+        "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Dal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PrabuddhikaMayurapak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HasangaWeerasinghe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -139,8 +139,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj": {
-                "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj"
+              "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj": {
+                "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj"
               }
             }
           }
@@ -216,17 +216,17 @@
         }
       }
     },
-    "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj": {
+    "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj",
+        "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj",
         "projectName": "FaqService.Domain",
-        "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj",
-        "packagesPath": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\",
-        "outputPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\obj\\",
+        "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj",
+        "packagesPath": "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\",
+        "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PrabuddhikaMayurapak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HasangaWeerasinghe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -313,17 +313,17 @@
         }
       }
     },
-    "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Service\\FaqService.Service.csproj": {
+    "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Service\\FaqService.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Service\\FaqService.Service.csproj",
+        "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Service\\FaqService.Service.csproj",
         "projectName": "FaqService.Service",
-        "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Service\\FaqService.Service.csproj",
-        "packagesPath": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\",
-        "outputPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Service\\obj\\",
+        "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Service\\FaqService.Service.csproj",
+        "packagesPath": "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\",
+        "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PrabuddhikaMayurapak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HasangaWeerasinghe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -337,8 +337,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj": {
-                "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj"
+              "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj": {
+                "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj"
               }
             }
           }
