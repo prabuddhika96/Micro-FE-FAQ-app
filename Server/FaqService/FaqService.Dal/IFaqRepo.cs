@@ -21,7 +21,7 @@ namespace FaqService.Dal
         void CreateQuestion(Question question);
         bool UserExists(Guid userId);
         void CreateUser(User user);
-        void CreateAnswer(Answer answer);
+        Answer CreateAnswer(Answer answer);
         void DeleteQuestion(Question question);
         IEnumerable<Answer> GetQuestionAnswers(int questionId);
         bool QuestionExists(int questionId);

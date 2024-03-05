@@ -2995,19 +2995,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\": {}
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj",
+      "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj",
       "projectName": "UserDataAccessLayer",
-      "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj",
-      "packagesPath": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\",
-      "outputPath": "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserDataAccessLayer\\obj\\",
+      "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj",
+      "packagesPath": "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\",
+      "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_1.0\\Micro-FE-FAQ-app\\Server\\UserMicroService\\UserDataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\PrabuddhikaMayurapak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HasangaWeerasinghe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -25,10 +25,11 @@ namespace FaqService.Dal
             return _dbContext.Answers.Any(a => a.QuestionId == questionId && a.Id == answerId);
         }
 
-        public void CreateAnswer(Answer answer)
+        public Answer CreateAnswer(Answer answer)
         {
             _dbContext.Answers.Add(answer);
             _dbContext.SaveChanges();
+            return answer;
         }
 
         public void CreateQuestion(Question question)

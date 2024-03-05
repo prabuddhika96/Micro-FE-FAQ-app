@@ -9,7 +9,7 @@ namespace FaqService.Service.interfaces
 {
     public interface IAnswerService
     {
-        void AddQuestionAnswers(Guid userId, int questionId, AnswerCreateDto answerCreateDto);
+        AnswerReadDto AddQuestionAnswers(Guid userId, int questionId, AnswerCreateDto answerCreateDto);
         bool AnswerExists(int questionId, int answerId);
         void DeleteAnswer(int answerId);
 

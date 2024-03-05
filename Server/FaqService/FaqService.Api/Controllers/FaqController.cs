@@ -147,10 +147,12 @@ namespace FaqService.Api.Controllers
 
 
         [HttpPost("questions/{questionId}/answers")]
-        public ActionResult AddQuestionAnswers
+        public ActionResult<AnswerReadDto> AddQuestionAnswers
             (int questionId, AnswerCreateDto answerCreateDto)
         {
             Guid userId = GetCurrentUserId();
+
+            AnswerReadDto answer;
 
             if (!_userService.UserExists(userId))
             {
@@ -164,7 +166,7 @@ namespace FaqService.Api.Controllers
 
             try
             {
-                _answerService.AddQuestionAnswers(userId, questionId, answerCreateDto);
+                answer = _answerService.AddQuestionAnswers(userId, questionId, answerCreateDto);
 
             }
             catch (Exception ex)
@@ -172,7 +174,7 @@ namespace FaqService.Api.Controllers
                 return BadRequest(ex.Message);
             }
 
-            return Ok("Answer successfully added");
+            return Ok(answer);
         }
 
 
