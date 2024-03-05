@@ -11,6 +11,7 @@ const routes: Routes = [
   // { path: '**', component: EmptyRouteComponent },
   { path: '', component: LoginComponent, title: 'Login' },
   { path: 'register', component: RegisterComponent, title: 'Register' },
+  { path: 'faq-app', component: EmptyRouteComponent, title: 'Quepax' },
   {
     path: sendRouteNames().editProfile,
     component: EditProfileComponent,

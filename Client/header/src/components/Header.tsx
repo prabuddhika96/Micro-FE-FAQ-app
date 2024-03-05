@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../Images/logo_main.png";
 import { useNavigate } from "react-router-dom";
 import { RouteNames } from "../constants/RouteNames";
@@ -6,6 +6,13 @@ import MyProfileComponent from "./MyProfileComponent";
 
 function Header() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("logintoken");
+    if (token) {
+      navigate(RouteNames.mainApp);
+    }
+  }, []);
   return (
     <header className="bg-blue-700 sticky top-0 mx-auto !z-40 flex w-full items-center justify-between border-b border-gray-500 p-3 ">
       <img
