@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-register',
@@ -65,13 +66,13 @@ export class RegisterComponent {
     // const headers = new HttpHeaders().set('Authorization', `Bearer ${localStorage.getItem('logintoken')}`);
 
     this.http
-      .post<any>('https://localhost:7288/api/UserAPI', this.signupObj)
+      .post<any>(`${environment.BACKEND_SERVER}/UserAPI`, this.signupObj)
       .subscribe(
         (response: any) => {
           console.log('Response from server:', response);
           if (response) {
-            alert('signUp successful');
-            this.router.navigateByUrl('/login');
+            // alert('signUp successful');
+            this.router.navigateByUrl('/');
           }
         },
         (error: any) => {
