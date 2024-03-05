@@ -16,8 +16,20 @@ const addAnswer = async (data: any, questionId: any) => {
   return response;
 };
 
+const voteAnswer = async (answerId: any, data: any) => {
+  const response = await axios({
+    method: "post",
+    url: `${baseURL}/Faq/votes/${answerId}`,
+    data: data,
+    headers: authPostHeader(),
+  });
+  // alert("Favourite created --- "+ response);
+  return response;
+};
+
 const AnswerService = {
   addAnswer,
+  voteAnswer,
 };
 
 export default AnswerService;
