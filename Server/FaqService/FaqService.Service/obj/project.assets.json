@@ -2891,9 +2891,12 @@
           "projectReferences": {
             "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj": {
               "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj"
+<<<<<<< HEAD
             },
             "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj": {
               "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj"
+=======
+>>>>>>> f1fcf31414a75d743c41fee6fb5b1e1d7893cad6
             }
           }
         }

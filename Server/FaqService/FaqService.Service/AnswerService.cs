@@ -22,7 +22,7 @@ namespace FaqService.Service
             _mapper = mapper;
         }
 
-        public void AddQuestionAnswers(Guid userId, int questionId, AnswerCreateDto answerCreateDto)
+        public AnswerReadDto AddQuestionAnswers(Guid userId, int questionId, AnswerCreateDto answerCreateDto)
         {
             if (answerCreateDto == null)
             {
@@ -33,7 +33,10 @@ namespace FaqService.Service
 
             answer.UserId = userId;
             answer.QuestionId = questionId;
-            _faqRepo.CreateAnswer(answer);
+
+            Answer dbAnswer = _faqRepo.CreateAnswer(answer);
+
+            return _mapper.Map<AnswerReadDto>(dbAnswer);
         }
 
         public bool AnswerExists(int questionId, int answerId)
