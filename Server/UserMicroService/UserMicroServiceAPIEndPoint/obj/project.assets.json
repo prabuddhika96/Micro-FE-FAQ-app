@@ -3726,19 +3726,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\": {}
+    "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserMicroServiceAPIEndPoint\\UserMicroServiceAPIEndPoint.csproj",
+      "projectUniqueName": "D:\\DotNet\\BackendInternProect\\bilding\\Micro-FE-FAQ-app\\Server\\UserMicroService\\UserMicroServiceAPIEndPoint\\UserMicroServiceAPIEndPoint.csproj",
       "projectName": "UserMicroServiceAPIEndPoint",
-      "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserMicroServiceAPIEndPoint\\UserMicroServiceAPIEndPoint.csproj",
-      "packagesPath": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\",
-      "outputPath": "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserMicroServiceAPIEndPoint\\obj\\",
+      "projectPath": "D:\\DotNet\\BackendInternProect\\bilding\\Micro-FE-FAQ-app\\Server\\UserMicroService\\UserMicroServiceAPIEndPoint\\UserMicroServiceAPIEndPoint.csproj",
+      "packagesPath": "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\",
+      "outputPath": "D:\\DotNet\\BackendInternProect\\bilding\\Micro-FE-FAQ-app\\Server\\UserMicroService\\UserMicroServiceAPIEndPoint\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\PrabuddhikaMayurapak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\NusalMuthuthanthrige\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3746,17 +3751,19 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\RabbitMQServices\\RabbitMqLocalNugets": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj": {
-              "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj"
+            "D:\\DotNet\\BackendInternProect\\bilding\\Micro-FE-FAQ-app\\Server\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj": {
+              "projectPath": "D:\\DotNet\\BackendInternProect\\bilding\\Micro-FE-FAQ-app\\Server\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj"
             },
-            "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj": {
-              "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj"
+            "D:\\DotNet\\BackendInternProect\\bilding\\Micro-FE-FAQ-app\\Server\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj": {
+              "projectPath": "D:\\DotNet\\BackendInternProect\\bilding\\Micro-FE-FAQ-app\\Server\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj"
             }
           }
         }

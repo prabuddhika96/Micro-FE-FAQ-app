@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VYgTWxgeSLkOPxDxsJlG1rXBNqlnrxfQ8wuoY4yTp1c=",
+  "Hash": "Hw/4q5rdOfUqTYrObOvgXS/SshDOjzlrUIaUCBYiODw=",
   "Source": "authenticationAPIEndPoint",
   "BasePath": "_content/authenticationAPIEndPoint",
   "Mode": "Default",
@@ -9,10 +9,10 @@
   "DiscoveryPatterns": [],
   "Assets": [
     {
-      "Identity": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
+      "Identity": "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
       "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\",
       "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
       "RelativePath": "Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
       "AssetKind": "All",
@@ -25,13 +25,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\QuickGrid.razor.js",
+      "Identity": "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\QuickGrid.razor.js",
       "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\",
       "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
       "RelativePath": "QuickGrid.razor.js",
       "AssetKind": "All",
@@ -44,13 +44,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\QuickGrid.razor.js"
+      "OriginalItemSpec": "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\QuickGrid.razor.js"
     },
     {
-      "Identity": "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\Debug\\net8.0\\scopedcss\\bundle\\authenticationAPIEndPoint.styles.css",
+      "Identity": "D:\\DotNet\\BackendInternProect\\bilding\\Micro-FE-FAQ-app\\Server\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\Debug\\net8.0\\scopedcss\\bundle\\authenticationAPIEndPoint.styles.css",
       "SourceId": "authenticationAPIEndPoint",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\DotNet\\BackendInternProect\\bilding\\Micro-FE-FAQ-app\\Server\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/authenticationAPIEndPoint",
       "RelativePath": "authenticationAPIEndPoint.styles.css",
       "AssetKind": "All",
@@ -63,7 +63,7 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\Debug\\net8.0\\scopedcss\\bundle\\authenticationAPIEndPoint.styles.css"
+      "OriginalItemSpec": "D:\\DotNet\\BackendInternProect\\bilding\\Micro-FE-FAQ-app\\Server\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\Debug\\net8.0\\scopedcss\\bundle\\authenticationAPIEndPoint.styles.css"
     }
   ]
 }

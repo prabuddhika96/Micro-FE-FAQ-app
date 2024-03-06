@@ -30,11 +30,11 @@ namespace UserDataAccessLayer.Entities
         public string? Email { get; set; } = string.Empty;
 
         [Required]
-
+        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()-_=+])[A-Za-z\d!@#$%^&*()-_=+]{8,}$", ErrorMessage = "Invalid Password")]
         public string? Password { get; set; } = string.Empty;
 
         [Required]
-        [StringLength(50, MinimumLength = 2)]
+        [StringLength(50, MinimumLength = 5)]
         public string? UserName { get; set; } = string.Empty;
 
         [Required]
