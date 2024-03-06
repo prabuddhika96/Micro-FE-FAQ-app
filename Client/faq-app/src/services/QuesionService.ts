@@ -34,10 +34,33 @@ const getQuestionsByUserId = async (userId: any) => {
   return response;
 };
 
+const getAnswersByQuestionId = async (questionId: any) => {
+  const response = await axios({
+    method: "get",
+    url: `${baseURL}/Faq/questions/${questionId}/answers`,
+    headers: authHeader(),
+  });
+  // alert("Favourite created --- "+ response);
+  return response;
+};
+
+const addQuestion = async (data: any) => {
+  const response = await axios({
+    method: "post",
+    url: `${baseURL}/Faq/questions`,
+    data: data,
+    headers: authHeader(),
+  });
+  // alert("Favourite created --- "+ response);
+  return response;
+};
+
 const QuesionService = {
   getAllQuestions,
   getQuestionById,
   getQuestionsByUserId,
+  getAnswersByQuestionId,
+  addQuestion,
 };
 
 export default QuesionService;

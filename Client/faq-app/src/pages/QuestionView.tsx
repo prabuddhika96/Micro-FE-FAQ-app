@@ -21,7 +21,7 @@ function QuestionView() {
     if (token) {
       // Decode the JWT token to extract user details
       var decoded = jwtDecode(token);
-      console.log(decoded);
+      // console.log(decoded);
       setUser(decoded);
     }
   }, []);
@@ -30,15 +30,19 @@ function QuestionView() {
     if (allQues) {
       setQuestions(allQuestions);
     } else {
-      // const myQuestions = allQuestions.filter(q => q.)
-      // setQuestions(myQuestions);
+      if (user) {
+        const myQuestions = allQuestions.filter(
+          (q: any) => q?.userId === user?.UserId
+        );
+        setQuestions(myQuestions);
+      }
     }
   }, [allQues]);
 
   useEffect(() => {
     QuesionService.getAllQuestions().then((res: any) => {
       if (res) {
-        console.log(res);
+        // console.log(res);
         if (res.status === 200 || res.status === 201) {
           setAllQuestions(res?.data);
           setQuestions(res?.data);
@@ -49,7 +53,7 @@ function QuestionView() {
 
   return (
     <div
-      className={`mx-auto content-center flex justify-center bg-cover bg-center bg-no-repeat h-screen`}
+      className={`mx-auto content-center flex justify-center bg-cover bg-center bg-no-repeat min-h-screen`}
       style={{
         backgroundImage: `url(${myBackgroundImage})`,
         backgroundColor: "rgba(255, 255, 255, 0.5)",
