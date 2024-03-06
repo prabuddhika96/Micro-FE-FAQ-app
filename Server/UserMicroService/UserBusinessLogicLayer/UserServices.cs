@@ -156,6 +156,10 @@ namespace UserBusinessLogicLayer
                 var pubUser = new UserMessage() { Id = SyncCheckUser.Id, UserName = SyncCheckUser.UserName, Password = UpdateUser.Password, EventType = "UserToAuthMessage", MessageType = "Update" };
                 _messageClient.PublishNewUserToAuthMs(pubUser);
             }
+            else
+            {
+                Console.WriteLine("dnndnnd");
+            }
             await _userRepo.UpdateUserAsync(UpdateUser);
         }
     }
