@@ -26,6 +26,14 @@ function AnswerCard({ answer }: any) {
         }
         setLikeBtnStatus(false);
       }, 1000);
+
+      const voteObj = {
+        voteType: "Like",
+      };
+
+      AnswerService.voteAnswer(answer?.id, voteObj).then((res: any) => {
+        console.log(res);
+      });
     }
   };
 
@@ -45,6 +53,14 @@ function AnswerCard({ answer }: any) {
         }
         setDisLikeBtnStatus(false);
       }, 1000);
+
+      const voteObj = {
+        voteType: "Dislike",
+      };
+
+      AnswerService.voteAnswer(answer?.id, voteObj).then((res: any) => {
+        console.log(res);
+      });
     }
   };
   return (

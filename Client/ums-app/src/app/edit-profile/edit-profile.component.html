@@ -81,15 +81,16 @@
     <div class="signup-body">
       <div class="main">
         <div class="signup">
-          <form (ngSubmit)="onSignUp()">
+          <form (ngSubmit)="handleEditProfile()">
             <input
               type="text"
               name="UserName"
               #UserName="ngModel"
-              [(ngModel)]="signupObj.UserName"
+              [(ngModel)]="editProfileObj.UserName"
               placeholder="Username"
               minlength="8"
               required
+              disabled
             />
             <div
               class="text-danger"
@@ -109,7 +110,7 @@
               type="text"
               name="FirstName"
               #FirstName="ngModel"
-              [(ngModel)]="signupObj.FirstName"
+              [(ngModel)]="editProfileObj.FirstName"
               placeholder="First name"
               required
             />
@@ -128,7 +129,7 @@
               type="text"
               #LastName="ngModel"
               name="LastName"
-              [(ngModel)]="signupObj.LastName"
+              [(ngModel)]="editProfileObj.LastName"
               placeholder="Last name"
               required
             />
@@ -147,7 +148,7 @@
               type="email"
               name="Email"
               #Email="ngModel"
-              [(ngModel)]="signupObj.Email"
+              [(ngModel)]="editProfileObj.Email"
               placeholder="Email"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               required
@@ -167,7 +168,7 @@
               type="password"
               #Password="ngModel"
               name="Password"
-              [(ngModel)]="signupObj.Password"
+              [(ngModel)]="editProfileObj.Password"
               placeholder="Password"
               minlength="8"
               required
@@ -190,7 +191,7 @@
               type="text"
               name="Role"
               #Role="ngModel"
-              [(ngModel)]="signupObj.Role"
+              [(ngModel)]="editProfileObj.Role"
               placeholder="Role"
               required
             /> -->

@@ -50,6 +50,9 @@
 .like-btn-active {
   color: blue;
 }
+.like-btn-active:hover {
+  scale: 120%;
+}
 .like-btn-disable {
   color: gray;
 }
