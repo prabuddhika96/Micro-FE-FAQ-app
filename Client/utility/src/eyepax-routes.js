@@ -7,4 +7,5 @@ export const RouteNames = {
 
   answerViewFromOrigin: "**",
   editProfile: "edit-profile",
+  changePw: "change-password",
 };

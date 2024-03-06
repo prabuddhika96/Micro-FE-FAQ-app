@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -7,7 +7,6 @@ import {
   HttpClientModule,
   HttpHeaders,
 } from '@angular/common/http';
-import { Subscription } from 'rxjs';
 // import { getData, sendRouteNames, state$ } from '@eyepax/utility';
 import { environment } from '../../environments/environment';
 import jwtDecode from 'jwt-decode';
