@@ -22,6 +22,7 @@ function AnswerView() {
     AnswerService.addAnswer(answer, id).then((res: any) => {
       if (res.status === 200 || res.status === 201) {
         console.log(res);
+        setAnswers([...answers, res?.data]);
       }
     });
   };
@@ -34,7 +35,7 @@ function AnswerView() {
           setQuestion(res?.data);
           QuesionService.getAnswersByQuestionId(res?.data?.id).then(
             (response: any) => {
-              console.log(response);
+              // console.log(response);
               if (res.status === 200 || res.status === 201) {
                 setAnswers(response?.data);
               }
