@@ -3,20 +3,19 @@ import { useNavigate } from "react-router-dom";
 import "../Styles/AskQuestionForm.css";
 import { RouteNames } from "../constants/RouteNames";
 import { getRoute } from "../utility/function";
+import QuesionService from "../services/QuesionService";
 
 interface FormData {
-  question: string;
-  questionDescription: string;
-  keyword: string;
+  title: string;
+  description: string;
 }
 
 function AskQuestionForm() {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState<FormData>({
-    question: "",
-    questionDescription: "",
-    keyword: "",
+    title: "",
+    description: "",
   });
 
   const handleInputChange = (
@@ -38,14 +37,12 @@ function AskQuestionForm() {
 
     console.log("Form Data :", formData);
 
-    alert("Question Posted Successfully...!");
-
-    setFormData({
-      question: "",
-      questionDescription: "",
-      keyword: "",
+    QuesionService.addQuestion(formData).then((res: any) => {
+      console.log(res);
+      navigate(getRoute(RouteNames.ViewQuestion));
     });
-    navigate("/askQuestion");
+
+    // alert("Question Posted Successfully...!");
   };
 
   return (
@@ -58,8 +55,8 @@ function AskQuestionForm() {
           <input
             type="text"
             id="question"
-            name="question"
-            value={formData.question}
+            name="title"
+            // value={formData.title}
             onChange={handleInputChange}
             required
           />
@@ -71,15 +68,15 @@ function AskQuestionForm() {
           <br />
           <textarea
             id="questionDescription"
-            name="questionDescription"
-            value={formData.questionDescription}
+            name="description"
+            // value={formData.description}
             onChange={handleInputChange}
             className="questionDescriptionInput"
           />
           <br />
         </div>
 
-        <div>
+        {/* <div>
           <label htmlFor="keyword">Keywords</label>
           <br />
           <input
@@ -90,7 +87,7 @@ function AskQuestionForm() {
             onChange={handleInputChange}
           />
           <br />
-        </div>
+        </div> */}
 
         <div className="buttons">
           <button type="submit" className="submit">

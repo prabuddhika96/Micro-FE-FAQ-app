@@ -1,13 +1,12 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { getData, sendRouteNames, state$ } from '@eyepax/utility';
-import {
-  FormControl,
-  FormGroup,
-  ReactiveFormsModule,
-  Validators,
-} from '@angular/forms';
+import { sendRouteNames, state$ } from '@eyepax/utility';
+import { FormsModule } from '@angular/forms';
 import { Subscription } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+import { environment } from '../../environments/environment';
+
 // import { LoginRequest } from '../login-request';
 // import { MatDialog } from '@angular/material/dialog';
 // import { PopUpComponent } from '../pop-up/pop-up.component';
@@ -15,93 +14,66 @@ import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, FormsModule],
   // template: ` <p>login works!</p> `,
   templateUrl: 'login.component.html',
   styleUrl: './login.component.css',
 })
-export class LoginComponent implements OnInit, OnDestroy {
-  constructor() {}
+export class LoginComponent implements OnInit {
+  issubmit: boolean = false;
+  subscription!: Subscription;
+  loginObj: Login;
 
-  editProfileForm = new FormGroup({
-    email: new FormControl('', [Validators.required, Validators.email]),
-    password: new FormControl('', Validators.required),
-  });
-
-  errorMessages: any = {}; // Initialize errorMessages as an empty object
-
-  handleSubmit(event: Event) {
-    event.preventDefault();
-    // Clear previous error messages
-    this.errorMessages = {};
-
-    if (this.editProfileForm.valid) {
-      console.log(this.editProfileForm.value);
-      this.subscription = state$.subscribe((data: any) => {
-        console.log('Angular rxjs->', data);
-      });
-      state$.next({ data: 'token' });
-      this.subscription.unsubscribe();
-    } else {
-      this.editProfileForm.markAllAsTouched();
-
-      // Iterate through each form control to check for validation errors
-      Object.keys(this.editProfileForm.controls).forEach((key) => {
-        const controlErrors = this.editProfileForm.get(key)?.errors;
-        if (controlErrors != null) {
-          Object.keys(controlErrors).forEach((keyError) => {
-            switch (keyError) {
-              case 'required':
-                this.errorMessages[key] = `${key} is required`;
-                break;
-              case 'email':
-                this.errorMessages[key] = `${key} must be a valid email`;
-                break;
-              default:
-                break;
-            }
-          });
-        }
-      });
-
-      // console.log(this.errorMessages.length);
-
-      // if (this.errorMessages.length > 0) {
-      //   return;
-      // } else {
-      //   this.subscription = state$.subscribe((data: any) => {
-      //     console.log('Angular rxjs->', data);
-      //   });
-      //   state$.next({ data: 'token' });
-      //   this.subscription.unsubscribe();
-      // }
+  ngOnInit(): void {
+    // Check if 'logintoken' exists in local storage
+    const token = localStorage.getItem('logintoken');
+    if (token) {
+      this.router.navigate(['/faq-app']);
     }
   }
 
-  // Openpopup(code: any, title: any, component: any) {
-  //   var _popup = this.dialog.open(PopUpComponent, {
-  //     width: '40%',
-  //     enterAnimationDuration: '100ms',
-  //     exitAnimationDuration: '100ms',
-  //     data: { title: title, code: code },
-  //   });
-  //   _popup.afterClosed().subscribe((item) => {});
-  // }
+  constructor(private http: HttpClient, private router: Router) {
+    this.loginObj = new Login();
 
-  // changePassword() {
-  //   // alert();
-  //   this.Openpopup(0, 'Change Password', PopUpComponent);
-  // }
-
-  subscription!: Subscription;
-  ngOnInit() {
-    // console.log('Angular ->', sendRouteNames());
-    // this.subscription = state$.subscribe((data: any) => {
-    //   console.log('Angular rxjs->', 'token');
-    // });
+    const token = localStorage.getItem('logintoken');
+    if (token) {
+      this.router.navigateByUrl(sendRouteNames().mainApp);
+    }
   }
-  ngOnDestroy() {
-    // state$.next({ data: 'Angular Data' });
-    // this.subscription.unsubscribe();
+
+  onLogin() {
+    // console.log('Login object:', this.loginObj);
+    this.issubmit = true;
+    // const headers = new HttpHeaders().set('Authorization', `Bearer ${localStorage.getItem('logintoken')}`);
+
+    this.http
+      .post<any>(`${environment.BACKEND_SERVER}/Authentication`, this.loginObj)
+      .subscribe(
+        (response: any) => {
+          if (response) {
+            this.subscription = state$.subscribe(() => {});
+            state$.next({ userToken: response?.token });
+
+            localStorage.setItem('logintoken', response?.token);
+
+            this.router.navigateByUrl(sendRouteNames().mainApp);
+          }
+        },
+        (error: any) => {
+          alert(error.error.title + ': The User doesnt exist');
+          console.log('error:', error);
+          this.router.navigateByUrl('/');
+        }
+      );
+  }
+}
+
+export class Login {
+  UserName: string;
+  Password: string;
+
+  constructor() {
+    this.UserName = '';
+    this.Password = '';
   }
 }

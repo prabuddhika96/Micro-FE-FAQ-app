@@ -1,19 +1,16 @@
 import React, { useEffect } from "react";
 import AskQBanner from "../components/AskQBanner";
 import FaqQuestions from "../components/FaqQuestions";
-import { getData, sendRouteNames, state$ } from "@eyepax/utility";
+import { state$ } from "@eyepax/utility";
 
 function Home() {
   useEffect(() => {
-    // console.log("react ->", getData());
-    // console.log("routes ->", sendRouteNames().AskQuestion);
     const subscription = state$.subscribe((data: any) => {
-      console.log("React rxjs->", data);
+      console.log("React rxjs->", data?.userToken);
+      if (data?.userToken) {
+        localStorage.setItem("logintoken", data?.userToken);
+      }
     });
-    // state$.next({ data: "React Data" });
-    // return () => {
-    //   subscription.unsubscribe();
-    // };
   }, []);
   return (
     <div>

@@ -6,54 +6,67 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="edit-profile">
-      <div class="edit-profile-form">
-        <form
-          [formGroup]="editProfileForm"
-          (submit)="handleSubmit($event)"
-          class="edit-form"
-        >
-          <legend class="form-legend">Login</legend>
+    <div class="login-body">
+      <div class="main">
+        <div class="login">
+          <form (ngSubmit)="onLogin()">
+            <!-- username field -->
+            <input
+              type="text"
+              name="UserName"
+              #UserName="ngModel"
+              [(ngModel)]="loginObj.UserName"
+              placeholder="Username"
+              placeholder="Username"
+              minlength="8"
+              required
+            />
+            <div
+              class="text-danger"
+              *ngIf="
+                (UserName.invalid && (UserName.touched || UserName.dirty)) ||
+                issubmit
+              "
+            >
+              <span *ngIf="UserName.errors?.['required']"
+                >This is required</span
+              >
+              <span *ngIf="UserName.errors?.['minlength']"
+                >Min 8 characters needed</span
+              >
+            </div>
 
-          <label class="form-label" for="email">Email</label>
-          <input
-            class="form-input"
-            type="text"
-            id="email"
-            formControlName="email"
-          />
-          <p class="form-error-msg" *ngIf="errorMessages['email']">
-            {{ errorMessages["email"] }}
-          </p>
-          <!-- Display error message -->
+            <!-- password field -->
+            <input
+              type="password"
+              #Password="ngModel"
+              name="Password"
+              [(ngModel)]="loginObj.Password"
+              placeholder="Password"
+              minlength="8"
+              required
+            />
+            <div
+              class="text-danger"
+              *ngIf="
+                (Password.invalid && (Password.touched || Password.dirty)) ||
+                issubmit
+              "
+            >
+              <span *ngIf="Password.errors?.['required']"
+                >This is required</span
+              >
+              <span *ngIf="Password.errors?.['minlength']"
+                >Min 8 characters needed</span
+              >
+            </div>
 
-          <label class="form-label" for="password">Password</label>
-          <input
-            class="form-input"
-            type="text"
-            id="password"
-            formControlName="password"
-          />
-          <p class="form-error-msg" *ngIf="errorMessages['password']">
-            {{ errorMessages["password"] }}
-          </p>
-          <!-- Display error message -->
-
-          <!-- <button (click)="changePassword()">Change Password</button> -->
-          <p class="register-link">
-            Didn't have an account? <a href="/register">Register</a>
-          </p>
-
-          <button class="form-btn" type="submit">Login</button>
-        </form>
+            <!-- login btn -->
+            <button type="submit">Login</button>
+          </form>
+          <p>Not a member? <a href="/register">SignUp</a></p>
+        </div>
       </div>
-      <div class="edit-profile-img">
-        <img
-          src="http://localhost:9002/assets/images/logo_main.png"
-          alt="logo"
-          width="600px"
-        />
-      </div>
-    </section>
+    </div>
   </body>
 </html>
