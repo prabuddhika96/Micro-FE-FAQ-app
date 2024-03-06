@@ -130,7 +130,7 @@ namespace UserMicroServiceAPIEndPoint.Controllers
         }
         //post method to update password
         [HttpPost("updateUserPassword/{id}")]
-        public async Task<IActionResult> PostInternalUserPassword(Guid id,PasswordUpdateUser user)
+        public async Task<IActionResult> PostInternalUserPassword(Guid id,PasswordUpdateUser passwordUpdate)
         {
             try
             {
@@ -148,9 +148,9 @@ namespace UserMicroServiceAPIEndPoint.Controllers
                             {
                                 return BadRequest();
                             }
-                            if (user.Password != null)
+                            if (passwordUpdate.newPassword != null && passwordUpdate.oldPassword!=null)
                             {
-                                await _service.UpdateUserPasswordAsync(id, user.Password);
+                                await _service.UpdateUserPasswordAsync(id, passwordUpdate);
 
                                 return Ok();
                             }

@@ -9,7 +9,7 @@ namespace UserBusinessLogicLayer
         Task<ReqResUser> GetReqResUserAsync(Guid id);
         Task<InternalUser> GetInternalUserAsync(Guid id);
         Task UpdateUserAsync(Guid id, ReqResUser putUser);
-        Task UpdateUserPasswordAsync(Guid id, string password);
+        Task UpdateUserPasswordAsync(Guid id, PasswordUpdateUser passUpdate);
         void DeleteUserAsync(Guid id);
         Task<InternalUser> CreateUserAsync (PostUser postUser);
     }

@@ -11,6 +11,9 @@ namespace UserDataAccessLayer.Entities
     {
         [Required]
         [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()-_=+])[A-Za-z\d!@#$%^&*()-_=+]{8,}$", ErrorMessage = "Invalid Password")]
-        public string? Password { get; set; } = string.Empty;
+        public string? newPassword { get; set; } 
+
+        [Required]
+        public string? oldPassword { get; set; }
     }
 }
