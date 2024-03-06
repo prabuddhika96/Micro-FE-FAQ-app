@@ -47,6 +47,7 @@ export class EditProfileComponent {
         // console.log('Response from server:', response);
         if (response) {
           this.editProfileObj = new EditProfile(
+            response?.id,
             response?.userName,
             response?.firstName,
             response?.lastName,
@@ -95,20 +96,25 @@ export class EditProfileComponent {
 }
 
 export class EditProfile {
-  UserName: string;
-  FirstName: string;
-  LastName: string;
-  Email: string;
+  id: string;
+  userName: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  role: string;
 
   constructor(
+    id: string,
     userName: string,
     firstName: string,
     lastName: string,
     email: string
   ) {
-    this.UserName = userName;
-    this.FirstName = firstName;
-    this.LastName = lastName;
-    this.Email = email;
+    this.id = id;
+    this.userName = userName;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.email = email;
+    this.role = 'user';
   }
 }
