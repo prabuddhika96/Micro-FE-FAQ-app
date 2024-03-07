@@ -1,4 +1,5 @@
 ﻿
+using UserBusinessLogicLayer.CustomErrors;
 using UserBusinessLogicLayer.PasswordServices;
 using UserBusinessLogicLayer.RabbitServices;
 using UserDataAccessLayer.Entities;
@@ -148,19 +149,21 @@ namespace UserBusinessLogicLayer
                 Role = SyncCheckUser.Role
             };
 
-            if (_pwServices.Verify(SyncCheckUser.Password, passUpdate.oldPassword))
-            { Console.WriteLine("true"); }
-            if(_pwServices.Verify(SyncCheckUser.Password, passUpdate.oldPassword))
+            
+
+            if (SyncCheckUser.Password != passwordHashNew && SyncCheckUser.Password == passwordHashOld)
             {
                 //synchronizing authentication Db
                 var pubUser = new UserMessage() { Id = SyncCheckUser.Id, UserName = SyncCheckUser.UserName, Password = UpdateUser.Password, EventType = "UserToAuthMessage", MessageType = "Update" };
                 _messageClient.PublishNewUserToAuthMs(pubUser);
+                await _userRepo.UpdateUserAsync(UpdateUser);
+                
+
             }
-            else
-            {
-                Console.WriteLine("dnndnnd");
-            }
-            await _userRepo.UpdateUserAsync(UpdateUser);
+                
+                
+            
+            
         }
     }
 }

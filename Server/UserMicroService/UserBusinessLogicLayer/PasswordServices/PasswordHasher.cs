@@ -23,8 +23,6 @@ namespace UserBusinessLogicLayer.PasswordServices
 
             return result;
         }
-
-        // verify
         public bool Verify(string DbPassword, string inputPassword)
         {
             var elements = DbPassword.Split(Delimeter);

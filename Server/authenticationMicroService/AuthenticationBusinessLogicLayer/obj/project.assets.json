@@ -1901,19 +1901,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\": {}
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationBusinessLogicLayer\\AuthenticationBusinessLogicLayer.csproj",
+      "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_2.0\\Micro-FE-FAQ-app\\Server\\authenticationMicroService\\AuthenticationBusinessLogicLayer\\AuthenticationBusinessLogicLayer.csproj",
       "projectName": "AuthenticationBusinessLogicLayer",
-      "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationBusinessLogicLayer\\AuthenticationBusinessLogicLayer.csproj",
-      "packagesPath": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\",
-      "outputPath": "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationBusinessLogicLayer\\obj\\",
+      "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_2.0\\Micro-FE-FAQ-app\\Server\\authenticationMicroService\\AuthenticationBusinessLogicLayer\\AuthenticationBusinessLogicLayer.csproj",
+      "packagesPath": "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\",
+      "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_2.0\\Micro-FE-FAQ-app\\Server\\authenticationMicroService\\AuthenticationBusinessLogicLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\PrabuddhikaMayurapak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HasangaWeerasinghe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1927,8 +1927,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj": {
-              "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj"
+            "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_2.0\\Micro-FE-FAQ-app\\Server\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj": {
+              "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\update_2.0\\Micro-FE-FAQ-app\\Server\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj"
             }
           }
         }

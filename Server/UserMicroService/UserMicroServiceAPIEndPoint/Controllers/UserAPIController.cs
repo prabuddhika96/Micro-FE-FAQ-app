@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using UserBusinessLogicLayer;
+using UserBusinessLogicLayer.CustomErrors;
 using UserBusinessLogicLayer.TokenValidationServices;
 using UserDataAccessLayer.Entities;
 
@@ -150,9 +151,9 @@ namespace UserMicroServiceAPIEndPoint.Controllers
                             }
                             if (passwordUpdate.newPassword != null && passwordUpdate.oldPassword!=null)
                             {
-                                await _service.UpdateUserPasswordAsync(id, passwordUpdate);
-
-                                return Ok();
+                                 await _service.UpdateUserPasswordAsync(id, passwordUpdate);
+                                return Ok("Update password successful");
+                                
                             }
 
                            
@@ -165,6 +166,10 @@ namespace UserMicroServiceAPIEndPoint.Controllers
                     }
                 }
                 return BadRequest();
+            }
+            catch(PasswordError ex)
+            {
+                return BadRequest(ex.Message);
             }
             catch (Exception ex)
             {
