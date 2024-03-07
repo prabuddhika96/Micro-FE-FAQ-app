@@ -6,87 +6,15 @@
     <title>Document</title>
   </head>
   <body style="margin: 0px !important">
-    <!-- <section class="edit-profile">
-      <div class="edit-profile-form">
-        <form
-          [formGroup]="editProfileForm"
-          (submit)="handleSubmit($event)"
-          class="edit-form"
-        >
-          <legend class="form-legend">Register</legend>
-
-          <label class="form-label" for="firstName">First Name</label>
-          <input
-            class="form-input"
-            type="text"
-            id="firstName"
-            formControlName="firstName"
-          />
-          <p class="form-error-msg" *ngIf="errorMessages['firstName']">
-            {{ errorMessages["firstName"] }}
-          </p>
-         
-
-          <label class="form-label" for="lastName">Last Name</label>
-          <input
-            class="form-input"
-            type="text"
-            id="lastName"
-            formControlName="lastName"
-          />
-          <p class="form-error-msg" *ngIf="errorMessages['lastName']">
-            {{ errorMessages["lastName"] }}
-          </p>
-        
-
-          <label class="form-label" for="email">Email</label>
-          <input
-            class="form-input"
-            type="text"
-            id="email"
-            formControlName="email"
-          />
-          <p class="form-error-msg" *ngIf="errorMessages['email']">
-            {{ errorMessages["email"] }}
-          </p>
-        
-          <label class="form-label" for="password">Password</label>
-          <input
-            class="form-input"
-            type="text"
-            id="password"
-            formControlName="password"
-          />
-          <p class="form-error-msg" *ngIf="errorMessages['password']">
-            {{ errorMessages["password"] }}
-          </p>
-        
-
-          <p class="register-link">
-            Already have an account? <a href="/">Login</a>
-          </p>
-
-          <button class="form-btn" type="submit">Register</button>
-        </form>
-      </div>
-      <div class="edit-profile-img">
-        <img
-          src="http://localhost:9002/assets/images/logo_main.png"
-          alt="logo"
-          width="600px"
-        />
-      </div>
-    </section> -->
-
     <div class="signup-body">
       <div class="main">
         <div class="signup">
           <form (ngSubmit)="handleEditProfile()">
             <input
               type="text"
-              name="UserName"
-              #UserName="ngModel"
-              [(ngModel)]="editProfileObj.UserName"
+              name="userName"
+              #userName="ngModel"
+              [(ngModel)]="editProfileObj.userName"
               placeholder="Username"
               minlength="8"
               required
@@ -95,60 +23,60 @@
             <div
               class="text-danger"
               *ngIf="
-                (UserName.invalid && (UserName.touched || UserName.dirty)) ||
+                (userName.invalid && (userName.touched || userName.dirty)) ||
                 issubmit
               "
             >
-              <span *ngIf="UserName.errors?.['required']"
+              <span *ngIf="userName.errors?.['required']"
                 >This is required</span
               >
-              <span *ngIf="UserName.errors?.['minlength']"
+              <span *ngIf="userName.errors?.['minlength']"
                 >Min 8 characters needed</span
               >
             </div>
             <input
               type="text"
-              name="FirstName"
-              #FirstName="ngModel"
-              [(ngModel)]="editProfileObj.FirstName"
+              name="firstName"
+              #firstName="ngModel"
+              [(ngModel)]="editProfileObj.firstName"
               placeholder="First name"
               required
             />
             <div
               class="text-danger"
               *ngIf="
-                (FirstName.invalid && (FirstName.touched || FirstName.dirty)) ||
+                (firstName.invalid && (firstName.touched || firstName.dirty)) ||
                 issubmit
               "
             >
-              <span *ngIf="FirstName.errors?.['required']"
+              <span *ngIf="firstName.errors?.['required']"
                 >This is required</span
               >
             </div>
             <input
               type="text"
-              #LastName="ngModel"
-              name="LastName"
-              [(ngModel)]="editProfileObj.LastName"
+              #lastName="ngModel"
+              name="lastName"
+              [(ngModel)]="editProfileObj.lastName"
               placeholder="Last name"
               required
             />
             <div
               class="text-danger"
               *ngIf="
-                (LastName.invalid && (LastName.touched || LastName.dirty)) ||
+                (lastName.invalid && (lastName.touched || lastName.dirty)) ||
                 issubmit
               "
             >
-              <span *ngIf="LastName.errors?.['required']"
+              <span *ngIf="lastName.errors?.['required']"
                 >This is required</span
               >
             </div>
             <input
               type="email"
-              name="Email"
-              #Email="ngModel"
-              [(ngModel)]="editProfileObj.Email"
+              name="email"
+              #email="ngModel"
+              [(ngModel)]="editProfileObj.email"
               placeholder="Email"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               required
@@ -156,51 +84,14 @@
             <div
               class="text-danger"
               *ngIf="
-                (Email.invalid && (Email.touched || Email.dirty)) || issubmit
+                (email.invalid && (email.touched || email.dirty)) || issubmit
               "
             >
-              <span *ngIf="Email.errors?.['required']">This is required</span>
-              <span *ngIf="Email.errors?.['pattern']"
+              <span *ngIf="email.errors?.['required']">This is required</span>
+              <span *ngIf="email.errors?.['pattern']"
                 >Email is not in valid form</span
               >
             </div>
-            <!-- <input
-              type="password"
-              #Password="ngModel"
-              name="Password"
-              [(ngModel)]="editProfileObj.Password"
-              placeholder="Password"
-              minlength="8"
-              required
-            />
-            <div
-              class="text-danger"
-              *ngIf="
-                (Password.invalid && (Password.touched || Password.dirty)) ||
-                issubmit
-              "
-            >
-              <span *ngIf="Password.errors?.['required']"
-                >This is required</span
-              >
-              <span *ngIf="Password.errors?.['minlength']"
-                >Min 8 characters needed</span
-              >
-            </div> -->
-            <!-- <input
-              type="text"
-              name="Role"
-              #Role="ngModel"
-              [(ngModel)]="editProfileObj.Role"
-              placeholder="Role"
-              required
-            /> -->
-            <!-- <div
-              class="text-danger"
-              *ngIf="(Role.invalid && (Role.touched || Role.dirty)) || issubmit"
-            >
-              <span *ngIf="Role.errors?.['required']">This is required</span>
-            </div> -->
             <button type="submit">Save Changes</button>
           </form>
         </div>

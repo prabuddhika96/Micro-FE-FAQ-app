@@ -1,4 +1,5 @@
 ﻿
+using UserBusinessLogicLayer.CustomErrors;
 using UserBusinessLogicLayer.PasswordServices;
 using UserBusinessLogicLayer.RabbitServices;
 using UserDataAccessLayer.Entities;
@@ -97,22 +98,24 @@ namespace UserBusinessLogicLayer
             return await _userRepo.GetReqResUserAsync(id);
         }
 
-        public async Task UpdateUserAsync(Guid id, PostUser postUser)
+        public async Task UpdateUserAsync(Guid id, ReqResUser putUser)
         {
+            var SyncCheckUser = await _userRepo.GetInternalUserAsync(id);
+
             var UpdateUser = new InternalUser()
             {
                 Id = id,
-                FirstName = postUser.FirstName,
-                LastName = postUser.LastName,
-                Password = _pwServices.Hash(postUser.Password),
-                Email = postUser.Email,
-                UserName = postUser.UserName,
-                Role = postUser.Role
+                FirstName = putUser.FirstName,
+                LastName = putUser.LastName,
+                Email = putUser.Email,
+                UserName = putUser.UserName,
+                Password=SyncCheckUser.Password,
+                Role = putUser.Role
             };
 
-            var SyncCheckUser = await _userRepo.GetInternalUserAsync(id);
+            
 
-            if(SyncCheckUser.UserName != UpdateUser.UserName || SyncCheckUser.Password != UpdateUser.Password)
+            if(SyncCheckUser.UserName != UpdateUser.UserName)
             {
                 //synchronizing authentication Db
                 var pubUser = new UserMessage() { Id = UpdateUser.Id, UserName = UpdateUser.UserName, Password = UpdateUser.Password, EventType = "UserToAuthMessage", MessageType = "Update" };
@@ -128,6 +131,39 @@ namespace UserBusinessLogicLayer
 
 
             await _userRepo.UpdateUserAsync(UpdateUser);
+        }
+
+        public async Task UpdateUserPasswordAsync(Guid id, PasswordUpdateUser passUpdate)
+        {
+            var SyncCheckUser = await _userRepo.GetInternalUserAsync(id);
+            string passwordHashNew = _pwServices.Hash(passUpdate.newPassword);
+            string passwordHashOld = _pwServices.Hash(passUpdate.oldPassword);
+            var UpdateUser = new InternalUser()
+            {
+                Id = id,
+                FirstName = SyncCheckUser.FirstName,
+                LastName = SyncCheckUser.LastName,
+                Email = SyncCheckUser.Email,
+                UserName = SyncCheckUser.UserName,
+                Password = passwordHashNew,
+                Role = SyncCheckUser.Role
+            };
+
+            
+
+            if (SyncCheckUser.Password != passwordHashNew && SyncCheckUser.Password == passwordHashOld)
+            {
+                //synchronizing authentication Db
+                var pubUser = new UserMessage() { Id = SyncCheckUser.Id, UserName = SyncCheckUser.UserName, Password = UpdateUser.Password, EventType = "UserToAuthMessage", MessageType = "Update" };
+                _messageClient.PublishNewUserToAuthMs(pubUser);
+                await _userRepo.UpdateUserAsync(UpdateUser);
+                
+
+            }
+                
+                
+            
+            
         }
     }
 }

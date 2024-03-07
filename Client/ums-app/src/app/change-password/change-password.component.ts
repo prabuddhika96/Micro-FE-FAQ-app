@@ -28,7 +28,7 @@ export class ChangePasswordComponent {
     this.changePwObj = new ChangePassword();
 
     const token = localStorage.getItem('logintoken');
-    if (token) {
+    if (!token) {
       this.router.navigateByUrl(sendRouteNames().mainApp);
     }
   }
