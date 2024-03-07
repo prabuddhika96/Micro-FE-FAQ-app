@@ -24,7 +24,16 @@ namespace UserBusinessLogicLayer.PasswordServices
             return result;
         }
 
-        // for the loging 
- 
+        // verify
+        public bool Verify(string DbPassword, string inputPassword)
+        {
+            var elements = DbPassword.Split(Delimeter);
+            var salt = Convert.FromBase64String(elements[0]);
+            var hash = Convert.FromBase64String(elements[1]);
+            var hashInput = Rfc2898DeriveBytes.Pbkdf2(inputPassword, salt, Iterations, hashAlgorithm, KeySize);
+            return CryptographicOperations.FixedTimeEquals(hash, hashInput);// check the equlity
+
+        }
+
     }
 }

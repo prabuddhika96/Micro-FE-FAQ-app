@@ -148,9 +148,9 @@ namespace UserBusinessLogicLayer
                 Role = SyncCheckUser.Role
             };
 
-            
-
-            if (SyncCheckUser.Password != passwordHashNew && SyncCheckUser.Password == passwordHashOld)
+            if (_pwServices.Verify(SyncCheckUser.Password, passUpdate.oldPassword))
+            { Console.WriteLine("true"); }
+            if(_pwServices.Verify(SyncCheckUser.Password, passUpdate.oldPassword))
             {
                 //synchronizing authentication Db
                 var pubUser = new UserMessage() { Id = SyncCheckUser.Id, UserName = SyncCheckUser.UserName, Password = UpdateUser.Password, EventType = "UserToAuthMessage", MessageType = "Update" };

@@ -9,6 +9,8 @@ namespace UserBusinessLogicLayer.PasswordServices
     public interface IPasswordHasher
     {
         string Hash(string password);
-   
+        bool Verify(string DbPassword, string inputPassword);
+
+
     }
 }
