@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using UserBusinessLogicLayer;
+using UserBusinessLogicLayer.CustomErrors;
 using UserBusinessLogicLayer.TokenValidationServices;
 using UserDataAccessLayer.Entities;
 
@@ -90,7 +91,7 @@ namespace UserMicroServiceAPIEndPoint.Controllers
         // PUT: api/Users/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutInternalUser(Guid id, PostUser postUser)
+        public async Task<IActionResult> PutInternalUser(Guid id, ReqResUser putUser)
         {
             try {
                 var token = HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
@@ -108,7 +109,7 @@ namespace UserMicroServiceAPIEndPoint.Controllers
                                 return BadRequest();
                             }
 
-                            await _service.UpdateUserAsync(id, postUser);
+                            await _service.UpdateUserAsync(id, putUser);
 
                             return Ok();
                         }
@@ -125,6 +126,55 @@ namespace UserMicroServiceAPIEndPoint.Controllers
             { 
                 Console.WriteLine(ex);
                 return StatusCode(500,ex.Message);
+            }
+
+        }
+        //post method to update password
+        [HttpPost("updateUserPassword/{id}")]
+        public async Task<IActionResult> PostInternalUserPassword(Guid id,PasswordUpdateUser passwordUpdate)
+        {
+            try
+            {
+                var token = HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
+                var (isValid, principal) = _tokenServices.ValidateToken(token);
+                if (token != null && isValid && principal != null)
+                {
+                    var userIdClaim = principal?.FindFirst("UserId")?.Value;
+                    if (Guid.TryParse(userIdClaim, out var userId))
+                    {
+                        if (userId == id)
+                        {
+                            var internalUser = await _service.GetInternalUserAsync(id);
+                            if (internalUser == null)
+                            {
+                                return BadRequest();
+                            }
+                            if (passwordUpdate.newPassword != null && passwordUpdate.oldPassword!=null)
+                            {
+                                 await _service.UpdateUserPasswordAsync(id, passwordUpdate);
+                                return Ok("Update password successful");
+                                
+                            }
+
+                           
+                        }
+                        else
+                        {
+                            return Forbid();
+                        }
+
+                    }
+                }
+                return BadRequest();
+            }
+            catch(PasswordError ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return StatusCode(500, ex.Message);
             }
 
         }
@@ -157,8 +207,6 @@ namespace UserMicroServiceAPIEndPoint.Controllers
                 return StatusCode(500, new { msg = "Error regestering user!" });
 
             }
-
-
 
         }
 

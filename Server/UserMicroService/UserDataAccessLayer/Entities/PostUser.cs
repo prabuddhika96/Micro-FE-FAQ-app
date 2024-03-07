@@ -30,7 +30,8 @@ namespace UserDataAccessLayer.Entities
         public string? Email { get; set; } = string.Empty;
 
         [Required]
-        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$", ErrorMessage = "Password must contain at least one uppercase letter, one lowercase letter, one digit, and be at least 8 characters long.")]
+        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()-_=+])[A-Za-z\d!@#$%^&*()-_=+]{8,}$", ErrorMessage = "Invalid Password")]
+
         public string? Password { get; set; } = string.Empty;
 
 

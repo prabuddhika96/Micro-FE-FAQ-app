@@ -16,7 +16,6 @@ function Header() {
     }
     if (!token && window.location.pathname !== "/register") {
       setLoggedUser(false);
-      console.log("first");
       navigate("/");
     }
   }, [window.location.pathname]);
