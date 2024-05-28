@@ -1906,11 +1906,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationBusinessLogicLayer\\AuthenticationBusinessLogicLayer.csproj",
+      "projectUniqueName": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationBusinessLogicLayer\\AuthenticationBusinessLogicLayer.csproj",
       "projectName": "AuthenticationBusinessLogicLayer",
-      "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationBusinessLogicLayer\\AuthenticationBusinessLogicLayer.csproj",
+      "projectPath": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationBusinessLogicLayer\\AuthenticationBusinessLogicLayer.csproj",
       "packagesPath": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\",
-      "outputPath": "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationBusinessLogicLayer\\obj\\",
+      "outputPath": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationBusinessLogicLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PrabuddhikaMayurapak\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1927,8 +1927,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj": {
-              "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj"
+            "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj": {
+              "projectPath": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj"
             }
           }
         }

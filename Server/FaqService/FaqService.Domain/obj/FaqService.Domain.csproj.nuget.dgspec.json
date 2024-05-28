@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj": {}
+    "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj": {
+    "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj",
+        "projectUniqueName": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj",
         "projectName": "FaqService.Domain",
-        "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj",
+        "projectPath": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj",
         "packagesPath": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\",
-        "outputPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\obj\\",
+        "outputPath": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PrabuddhikaMayurapak\\AppData\\Roaming\\NuGet\\NuGet.Config",

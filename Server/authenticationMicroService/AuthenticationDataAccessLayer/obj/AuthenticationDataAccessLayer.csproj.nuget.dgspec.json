@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj": {}
+    "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj": {}
   },
   "projects": {
-    "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj": {
+    "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj",
+        "projectUniqueName": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj",
         "projectName": "AuthenticationDataAccessLayer",
-        "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj",
+        "projectPath": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\",
-        "outputPath": "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationDataAccessLayer\\obj\\",
+        "outputPath": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\authenticationMicroService\\AuthenticationDataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PrabuddhikaMayurapak\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj": {}
+    "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj": {}
   },
   "projects": {
-    "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj": {
+    "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj",
+        "projectUniqueName": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj",
         "projectName": "UserBusinessLogicLayer",
-        "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj",
+        "projectPath": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj",
         "packagesPath": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\",
-        "outputPath": "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserBusinessLogicLayer\\obj\\",
+        "outputPath": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\UserMicroService\\UserBusinessLogicLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PrabuddhikaMayurapak\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj": {
-                "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj"
+              "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj": {
+                "projectPath": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj": {
+    "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj",
+        "projectUniqueName": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj",
         "projectName": "UserDataAccessLayer",
-        "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj",
+        "projectPath": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\",
-        "outputPath": "D:\\Practice\\Micro FE FAQ app\\Server\\UserMicroService\\UserDataAccessLayer\\obj\\",
+        "outputPath": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\UserMicroService\\UserDataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PrabuddhikaMayurapak\\AppData\\Roaming\\NuGet\\NuGet.Config",

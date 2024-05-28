@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Practice\\Micro FE FAQ app\\Server\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj": {}
+    "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj": {}
   },
   "projects": {
-    "D:\\Practice\\Micro FE FAQ app\\Server\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj": {
+    "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practice\\Micro FE FAQ app\\Server\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj",
+        "projectUniqueName": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj",
         "projectName": "Api_Gateway_ocelot",
-        "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj",
+        "projectPath": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj",
         "packagesPath": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\",
-        "outputPath": "D:\\Practice\\Micro FE FAQ app\\Server\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\obj\\",
+        "outputPath": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PrabuddhikaMayurapak\\AppData\\Roaming\\NuGet\\NuGet.Config",

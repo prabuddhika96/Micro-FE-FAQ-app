@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VYgTWxgeSLkOPxDxsJlG1rXBNqlnrxfQ8wuoY4yTp1c=",
+  "Hash": "FvI5mn801WTG6tav5ccgFwJtZggWYRJfj4rB25S0020=",
   "Source": "authenticationAPIEndPoint",
   "BasePath": "_content/authenticationAPIEndPoint",
   "Mode": "Default",
@@ -47,10 +47,10 @@
       "OriginalItemSpec": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\QuickGrid.razor.js"
     },
     {
-      "Identity": "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\Debug\\net8.0\\scopedcss\\bundle\\authenticationAPIEndPoint.styles.css",
+      "Identity": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\Debug\\net8.0\\scopedcss\\bundle\\authenticationAPIEndPoint.styles.css",
       "SourceId": "authenticationAPIEndPoint",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/authenticationAPIEndPoint",
       "RelativePath": "authenticationAPIEndPoint.styles.css",
       "AssetKind": "All",
@@ -63,7 +63,7 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Practice\\Micro FE FAQ app\\Server\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\Debug\\net8.0\\scopedcss\\bundle\\authenticationAPIEndPoint.styles.css"
+      "OriginalItemSpec": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\Debug\\net8.0\\scopedcss\\bundle\\authenticationAPIEndPoint.styles.css"
     }
   ]
 }

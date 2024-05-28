@@ -3311,11 +3311,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Api\\FaqService.Api.csproj",
+      "projectUniqueName": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Api\\FaqService.Api.csproj",
       "projectName": "FaqService.Api",
-      "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Api\\FaqService.Api.csproj",
+      "projectPath": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Api\\FaqService.Api.csproj",
       "packagesPath": "C:\\Users\\PrabuddhikaMayurapak\\.nuget\\packages\\",
-      "outputPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Api\\obj\\",
+      "outputPath": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PrabuddhikaMayurapak\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3332,11 +3332,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj": {
-              "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj"
+            "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj": {
+              "projectPath": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj"
             },
-            "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Service\\FaqService.Service.csproj": {
-              "projectPath": "D:\\Practice\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Service\\FaqService.Service.csproj"
+            "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Service\\FaqService.Service.csproj": {
+              "projectPath": "D:\\Eyepax Assignment\\All Assignments\\Micro FE FAQ app\\Server\\FaqService\\FaqService.Service\\FaqService.Service.csproj"
             }
           }
         }

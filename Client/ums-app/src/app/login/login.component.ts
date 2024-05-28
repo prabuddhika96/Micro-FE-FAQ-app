@@ -7,10 +7,6 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { environment } from '../../environments/environment';
 
-// import { LoginRequest } from '../login-request';
-// import { MatDialog } from '@angular/material/dialog';
-// import { PopUpComponent } from '../pop-up/pop-up.component';
-
 @Component({
   selector: 'app-login',
   standalone: true,
